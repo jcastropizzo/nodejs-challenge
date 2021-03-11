@@ -4,6 +4,10 @@ services:
     build: 
       context: ./..
       dockerfile: ./.docker/dockerfile
+    volumes:
+       - sqllitedata:/usr/src/app/data
     ports:
       - "8999:8999"
       - "8000:8000"
+volumes:
+  sqllitedata:

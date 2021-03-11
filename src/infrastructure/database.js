@@ -1,9 +1,15 @@
-var sqlite3 = require('sqlite3').verbose()
-var md5 = require('md5')
+const sqlite3 = require('sqlite3').verbose()
+const md5 = require('md5')
+const fs = require('fs');
 
+const DBSOURCEDIR = "./data"
 const DBSOURCE = "db.sqlite"
 
-let db = new sqlite3.Database(DBSOURCE, (err) => {
+if (!fs.existsSync(DBSOURCEDIR)){
+    fs.mkdirSync(DBSOURCEDIR);
+}
+
+let db = new sqlite3.Database(DBSOURCEDIR + DBSOURCE, (err) => {
     if (err) {
         // Cannot open database
         console.error(err.message)
