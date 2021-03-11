@@ -6,9 +6,6 @@ Used SqlLite as store.
 
 Requierements:
 
-We would like you to work on a small test so we have a general idea of your skillset.
-
-    What we would like you to build
     Build a service which provides both a websocket server and a REST endpoint.
     The websocket server should accept messages containing any key-value pair and store it.
     The REST endpoint should accept GET requests specifying a key and should return the corresponding value for that key, or an appropriate HTTP error if the key does not exist.
@@ -20,12 +17,7 @@ We would like you to work on a small test so we have a general idea of your skil
     A zip or public git repository with the relevant files for the project
     Instructions on how to get it up and running locally
     Additional thoughts/comments if any
-
-    What we will be looking at
-    Clean code
-    Tests
-    General usage/best practices
-
+    
 
 # Running the app manually
 ## Dependencies installation
