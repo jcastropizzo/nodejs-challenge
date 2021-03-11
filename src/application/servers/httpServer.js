@@ -1,5 +1,5 @@
 var express = require("express")
-var db = require("../infrastructure/database.js")
+const Repository = require("../repository");
 var md5 = require("md5")
 
 // Server port
@@ -13,10 +13,7 @@ const startServer = async () => {
 
     app.get("/api/key-values/:key", async (req, res, next) => {
         try {
-            const sql = "select value from KeyValue where [id] = ?"
-            const params = [req.params.key]
-            const result = await db.query(sql, params)
-            console.log(result);
+            const result = await Repository.getValueByKey(req.params.key)
             res.json({
                 "message": "success",
                 "data": JSON.parse(result[0].value)

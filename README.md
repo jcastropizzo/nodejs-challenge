@@ -43,6 +43,5 @@ The servers ports are 8000 for the Rest Api and 8999 for the WS server
 ## ToDo
  - Add Testing
  - Add Logging
- - Create a Repository to handle the queries to the database
  - Create a class for the key-value pair
  - Use a config json or environment variables for the ports
