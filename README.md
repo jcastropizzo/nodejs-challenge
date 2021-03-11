@@ -4,6 +4,29 @@ NodeJS rest api + Websocket server
 
 Used SqlLite as store.
 
+Requierements:
+
+We would like you to work on a small test so we have a general idea of your skillset.
+
+    What we would like you to build
+    Build a service which provides both a websocket server and a REST endpoint.
+    The websocket server should accept messages containing any key-value pair and store it.
+    The REST endpoint should accept GET requests specifying a key and should return the corresponding value for that key, or an appropriate HTTP error if the key does not exist.
+    Key-value state should persist between executions of the service (in other words, if the service shuts down and restarts for some reason, key-value pairs that were set before the restart should be restored). Multiple simultaneous websocket connections should be possible and should be allowed to change the state, without concurrency issues.
+
+    Feel free to add more features to show off your skills!
+
+    What we want to receive
+    A zip or public git repository with the relevant files for the project
+    Instructions on how to get it up and running locally
+    Additional thoughts/comments if any
+
+    What we will be looking at
+    Clean code
+    Tests
+    General usage/best practices
+
+
 # Running the app manually
 ## Dependencies installation
 
