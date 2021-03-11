@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  media-monks-challenge:
+    build: 
+      context: ./..
+      dockerfile: ./.docker/dockerfile
+    ports:
+      - "8999:8999"
+      - "8000:8000"
